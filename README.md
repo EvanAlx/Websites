@@ -1,2 +1,3 @@
 # Websites
-This is a bunch of websites that I've made
+important note:
+these are very simple websites that may have some issues.
