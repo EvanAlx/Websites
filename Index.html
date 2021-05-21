@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initail-scale=1.0" />
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="/Design/Style.css" />
+    <link rel="icon" href="https://www.youtube.com/s/desktop/d8cf988e/img/favicon_32.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="/Programming/Script.js"></script>
+  </head>
+  <body>
+    <!-- nav menu html -->
+
+    <div id="navmenu">
+      <a href="https://www.youtube.com">
+
+        <!-- youtube icon html -->
+
+        <svg
+          viewBox="0 0 200 60"
+          preserveAspectRatio="xMidYMid meet"
+          class="youtube_word_icon"
+          style="display: block; width: 80px; height: 24px; fill: #ffffff"
+        >
+          <g
+            viewBox="0 0 200 60"
+            preserveAspectRatio="xMidYMid meet"
+            class="style-scope ytd-topbar-logo-renderer"
+          >
+            <g class="style-scope ytd-topbar-logo-renderer">
+              <path
+                fill="#FF0000"
+                d="M63,14.87c-0.72-2.7-2.85-4.83-5.56-5.56C52.54,8,32.88,8,32.88,8S13.23,8,8.32,9.31 c-2.7,0.72-4.83,2.85-5.56,5.56C1.45,19.77,1.45,30,1.45,30s0,10.23,1.31,15.13c0.72,2.7,2.85,4.83,5.56,5.56 C13.23,52,32.88,52,32.88,52s19.66,0,24.56-1.31c2.7-0.72,4.83-2.85,5.56-5.56C64.31,40.23,64.31,30,64.31,30 S64.31,19.77,63,14.87z"
+                class="style-scope ytd-topbar-logo-renderer"
+              ></path>
+              <polygon
+                fill="#FFFFFF"
+                points="26.6,39.43 42.93,30 26.6,20.57"
+                class="style-scope ytd-topbar-logo-renderer"
+              ></polygon>
+            </g>
+            <g class="style-scope ytd-topbar-logo-renderer">
+              <g
+                id="youtube-paths"
+                class="style-scope ytd-topbar-logo-renderer"
+              >
+                <path
+                  fill="#ffffff;"
+                  d="M92.69,48.03c-1.24-0.84-2.13-2.14-2.65-3.91c-0.52-1.77-0.79-4.12-0.79-7.06v-4 c0-2.97,0.3-5.35,0.9-7.15c0.6-1.8,1.54-3.11,2.81-3.93c1.27-0.82,2.94-1.24,5.01-1.24c2.04,0,3.67,0.42,4.9,1.26 c1.23,0.84,2.13,2.15,2.7,3.93c0.57,1.78,0.85,4.16,0.85,7.12v4c0,2.94-0.28,5.3-0.83,7.08c-0.55,1.78-1.45,3.09-2.7,3.91 c-1.24,0.82-2.93,1.24-5.06,1.24C95.65,49.29,93.93,48.87,92.69,48.03z M99.66,43.71c0.34-0.9,0.52-2.37,0.52-4.4v-8.59 c0-1.98-0.17-3.42-0.52-4.34c-0.34-0.91-0.95-1.37-1.82-1.37c-0.84,0-1.43,0.46-1.78,1.37c-0.34,0.91-0.52,2.36-0.52,4.34v8.59 c0,2.04,0.16,3.51,0.49,4.4c0.33,0.9,0.93,1.35,1.8,1.35C98.71,45.06,99.31,44.61,99.66,43.71z"
+                  class="style-scope ytd-topbar-logo-renderer"
+                ></path>
+                <path
+                  fill="#ffffff;"
+                  d="M188.16,37.13v1.39c0,1.77,0.05,3.09,0.16,3.98c0.1,0.88,0.32,1.53,0.65,1.93 c0.33,0.4,0.84,0.61,1.53,0.61c0.93,0,1.57-0.36,1.91-1.08c0.34-0.72,0.53-1.92,0.56-3.6l5.35,0.31 c0.03,0.24,0.04,0.57,0.04,0.99c0,2.55-0.7,4.45-2.09,5.71c-1.39,1.26-3.36,1.89-5.91,1.89c-3.06,0-5.2-0.96-6.43-2.88 c-1.23-1.92-1.84-4.88-1.84-8.9v-4.81c0-4.14,0.64-7.15,1.91-9.06c1.27-1.9,3.45-2.85,6.54-2.85c2.13,0,3.76,0.39,4.9,1.17 c1.14,0.78,1.94,1.99,2.41,3.64c0.46,1.65,0.7,3.93,0.7,6.83v4.72H188.16z M188.95,25.53c-0.31,0.39-0.52,1.03-0.63,1.91 c-0.11,0.88-0.16,2.23-0.16,4.02v1.98h4.54v-1.98c0-1.77-0.06-3.11-0.18-4.02c-0.12-0.91-0.34-1.56-0.65-1.93 c-0.31-0.37-0.8-0.56-1.46-0.56C189.75,24.94,189.26,25.14,188.95,25.53z"
+                  class="style-scope ytd-topbar-logo-renderer"
+                ></path>
+                <path
+                  fill="#ffffff;"
+                  d="M77.59,36.61l-7.06-25.49h6.16l2.47,11.55c0.63,2.85,1.09,5.27,1.39,7.28h0.18 c0.21-1.44,0.67-3.85,1.39-7.24l2.56-11.6h6.16L83.7,36.61v12.23h-6.11V36.61z"
+                  class="style-scope ytd-topbar-logo-renderer"
+                ></path>
+                <path
+                  fill="#ffffff;"
+                  d="M126.45,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8 c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79 c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H126.45z"
+                  class="style-scope ytd-topbar-logo-renderer"
+                ></path>
+                <path
+                  fill="#ffffff;"
+                  d="M158.27,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8 c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79 c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H158.27z"
+                  class="style-scope ytd-topbar-logo-renderer"
+                ></path>
+                <path
+                  fill="#ffffff;"
+                  d="M143.31,16.11h-6.16v32.72h-6.07V16.11h-6.16v-4.99h18.38V16.11z"
+                  class="style-scope ytd-topbar-logo-renderer"
+                ></path>
+                <path
+                  fill="#ffffff;"
+                  d="M178.8,25.69c-0.38-1.74-0.98-3-1.82-3.78c-0.84-0.78-1.99-1.17-3.46-1.17c-1.14,0-2.2,0.32-3.19,0.97 c-0.99,0.64-1.75,1.49-2.29,2.54h-0.05l0-14.52h-5.98v39.11h5.12l0.63-2.61h0.13c0.48,0.93,1.2,1.66,2.16,2.2 c0.96,0.54,2.02,0.81,3.19,0.81c2.1,0,3.64-0.97,4.63-2.9c0.99-1.93,1.48-4.95,1.48-9.06v-4.36 C179.36,29.84,179.17,27.43,178.8,25.69z M173.11,36.93c0,2.01-0.08,3.58-0.25,4.72c-0.16,1.14-0.44,1.95-0.83,2.43 c-0.39,0.48-0.91,0.72-1.57,0.72c-0.51,0-0.98-0.12-1.42-0.36c-0.43-0.24-0.79-0.6-1.06-1.08V27.71 c0.21-0.75,0.57-1.36,1.08-1.84c0.51-0.48,1.06-0.72,1.66-0.72c0.63,0,1.12,0.25,1.46,0.74c0.34,0.49,0.58,1.33,0.72,2.49 c0.13,1.17,0.2,2.83,0.2,4.99V36.93z"
+                  class="style-scope ytd-topbar-logo-renderer"
+                ></path>
+              </g>
+            </g>
+          </g></svg
+      ></a>
+
+      <!-- search bar html -->
+
+      <input
+        class="searchbox"
+        type="search"
+        spellcheck="false"
+        name="searchbox"
+        placeholder="Search"
+      />
+
+      <a title="Search" href="" class="searchbuttonclick">
+        <input
+          title="Search"
+          class="searchbutton"
+          type="button"
+          name="searchbuton"
+        />
+
+        <!-- search bar icon html -->
+
+        <svg
+          viewBox="0 0 24 24"
+          class="searchicon"
+          style="display: block; width: 20px; height: 20px"
+        >
+          <g>
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            ></path>
+          </g>
+        </svg>
+
+        <!-- voice search icon -->
+
+        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="voicesearch" style="display: block; width: 24px; height: 24px;"><g class="style-scope yt-icon"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z" class="style-scope yt-icon"></path></g></svg>
+
+      </a>
+      <!-- nav items html -->
+
+      <span class="navitems">
+        <!-- nav item1 html -->
+        <span class="create">
+          <svg
+            class="navitem1"
+            viewBox="0 0 24 24"
+            style="display: block; width: 24px; height: 24px"
+          >
+            <g>
+              <path
+                d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"
+              ></path>
+            </g>
+          </svg>
+          <button class="navlink1" title="Create"></button>
+          <ul>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="uploadicon"><g class="g1"><path d="M19,4H5A2.15,2.15,0,0,0,3,6V18a2.15,2.15,0,0,0,2,2H19a2.15,2.15,0,0,0,2-2V6A2.15,2.15,0,0,0,19,4ZM5,18H19V6H5Z" fill="#6f6f6f" fill-rule="evenodd"></path><path d="M15,12,10,8v8Z" fill="#f80000" fill-rule="evenodd"></path></g></svg>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="liveicon"><g><path d="M23,12a11,11,0,0,1-3.22,7.78l-1.41-1.41a9,9,0,0,0,0-12.73l1.41-1.41A11,11,0,0,1,23,12ZM5.64,5.64,4.22,4.22a11,11,0,0,0,0,15.56l1.41-1.41a9,9,0,0,1,0-12.73ZM16.95,7.05,15.54,8.46a5,5,0,0,1,0,7.07l1.41,1.41a7,7,0,0,0,0-9.9Zm-9.9,0a7,7,0,0,0,0,9.9l1.41-1.41a5,5,0,0,1,0-7.07Z" fill="#6f6f6f" fill-rule="evenodd"></path><path d="M12,9a3,3,0,1,1-3,3,3,3,0,0,1,3-3" fill="#f80000" fill-rule="evenodd"></path></g></svg>
+            <li  class="li1"><a href="https://studio.youtube.com/channel/UCculFrsHWiGtb69I3p-HSKg/videos?d=ud">Upload video</a></li>
+            <li class="li2"><a href="https://studio.youtube.com/channel/UCculFrsHWiGtb69I3p-HSKg/livestreaming">Go live</a></li>
+          </ul>
+        </span>
+
+        <!-- nav item2 html -->
+
+        <span class="grid">
+          <svg
+            viewBox="0 0 24 24"
+            class="navitem2"
+            style="display: block; width: 24px; height: 24px"
+          >
+            <g>
+              <path
+                d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"
+              ></path>
+            </g>
+          </svg>
+          <button class="navlink2" title="YouTube apps"></button>
+          <ul>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="youtubetv"><g><path fill="#F00" d="M23.8,17.1c0,0.9-0.7,1.6-1.6,1.6H1.9c-0.9,0-1.6-0.7-1.6-1.6V4.8c0-0.9,0.7-1.6,1.6-1.6 h20.3c0.9,0,1.6,0.7,1.6,1.6V17.1z"></path><path fill="#F00" d="M17.3,20.8H6.7c-0.3,0-0.5-0.2-0.5-0.5v0c0-0.3,0.2-0.5,0.5-0.5h10.7 c0.3,0,0.5,0.2,0.5,0.5v0C17.9,20.6,17.6,20.8,17.3,20.8z"></path><polygon fill="#FFFFFF" points="9.6,14.4 15.7,10.9 9.6,7.5"></polygon></g></svg>
+            <li class="li3"><a href="https://tv.youtube.com/?utm_source=youtube_web&utm_medium=ep&utm_campaign=home&ve=34273">YouTube TV</a></li>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="youtubemusic"><g fill-rule="nonzero" fill="none"><circle fill="red" cx="12" cy="12" r="12"></circle><path d="M12 6.278A5.728 5.728 0 0 1 17.722 12 5.728 5.728 0 0 1 12 17.722 5.728 5.728 0 0 1 6.278 12 5.728 5.728 0 0 1 12 6.278zm0-.55A6.272 6.272 0 0 0 5.727 12 6.272 6.272 0 0 0 12 18.273 6.272 6.272 0 0 0 18.273 12 6.272 6.272 0 0 0 12 5.727z" fill="#FFF"></path><path fill="#FFF" d="M9.818 15.136l5.318-3.272-5.318-3z"></path></g></svg>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="youtubekids"><g><path fill="#282828" d="M16.38 10.69c-.04-.02-.09-.03-.13-.05-1.35-.65-5.69-2.07-6.55-2.32-.15-.05-.59-.18-.76-.05-.16.12-.06.63-.04.78.07.5.7 5.03.77 5.5l.01.09c.06.4.16 1.21.39 1.33.23.12.82-.27 1.13-.52 0 0 3.68-2.6 4.31-3.05l.82-.58.1-.07c.19-.12.42-.26.41-.57 0-.31-.27-.42-.46-.49zm-5.88 4.44c-.23-.83-.89-5.11-.95-6.12.97.12 5.1 1.58 6.34 2.25-.24.17-4.76 3.52-5.39 3.87z"></path><path fill="#F00" d="M23.29 13.89c-.04-1.1-.36-5.29-.43-5.8-.13-.93-.37-1.8-.69-2.6-.21-.52-.52-1.05-1.31-1.61-1.01-.72-1.82-.84-2.85-.84-.72 0-1.21.04-1.53.06-2.59.18-4.95.46-7.22.86-2.01.36-3.53.76-4.92 1.3-1.04.41-1.85.92-2.48 1.57C.83 7.88.56 8.85.79 10.01c.3 1.58.8 5.23.82 5.43.11.97.28 2.1.67 3.2.44 1.21 1.25 1.94 2.48 2.23.79.19 1.61.13 2.68-.12 1.44-.34 2.87-.67 4.33-.93 2.47-.45 4.78-.58 5.78-.64.45-.03 1.52-.12 1.61-.13.24-.03.56-.09.88-.15.82-.18 1.43-.61 1.99-1.15.27-.26.61-.69.82-1.11.44-.93.47-1.91.44-2.75zm-6.85-2.14c-.04.02-.07.04-.1.07-.28.19-.55.38-.82.58-.63.45-4.31 3.05-4.31 3.05-.31.25-.9.63-1.13.52-.23-.12-.33-.93-.39-1.33l-.01-.09c-.08-.48-.7-5.01-.77-5.5-.03-.15-.13-.66.03-.78.17-.13.61 0 .76.05.87.25 5.2 1.67 6.56 2.32.04.02.08.04.13.05.19.08.46.18.47.5 0 .3-.23.45-.42.56z"></path><path fill="#FFF" d="M15.9 11.26c-.25.17-4.77 3.52-5.4 3.87-.23-.83-.89-5.11-.95-6.12.98.12 5.1 1.58 6.35 2.25z"></path><path fill="#FF8983" d="M.76 9.91c.23-1.61 1.07-2.16 1.67-2.6 1.01-.75 1.88-1.16 3.3-1.55C9.75 4.65 12.16 4.33 16.3 4.2c1.11-.03 2.89-.12 3.92.37.83.39 1.5.86 2.3 1.92-.1-.34-.21-.67-.34-.99-.21-.52-.52-1.05-1.31-1.61-1.01-.72-1.82-.84-2.85-.84-.66 0-1.12.03-1.44.06-.03 0-.06.01-.09.01-2.59.18-4.95.46-7.22.86-2.01.36-3.53.76-4.92 1.3-1.05.39-1.86.9-2.49 1.55-.09.1-.18.19-.26.29C.81 8.03.59 8.9.76 9.91z""></path><path fill="#282828" d="M23.98 13.48c-.02-.58-.27-4.7-.37-5.37-.17-1.1-.37-2.16-.85-3.14-.48-.97-.91-1.52-1.63-1.92-1.33-.73-2.15-.84-4.09-.77-.96.04-6.6.72-7.83.93-2.06.35-3.7.78-5.17 1.36-1.01.4-1.82.89-2.46 1.49C.23 7.32-.24 8.7.11 10.38c.26 1.29.69 4.81.75 5.26.13.98.31 2.13.73 3.26.57 1.54 1.63 2.44 3.25 2.75.29.06.58.08.89.08.47.01 1.26-.12 1.88-.27.32-.08 1.34-.32 3.28-.73 3.2-.68 7.04-.88 7.77-.94.11-.01 1-.07 1.34-.13 1.35-.25 2.17-1.03 2.96-1.85.47-.49.9-1.36.99-2.25.07-.76.05-1.43.03-2.08zm-1.14 3.15c-.21.43-.55.85-.82 1.11-.57.54-1.17.96-1.99 1.15-.31.07-.63.13-.88.15-.09.01-1.17.1-1.61.13-1 .06-3.31.18-5.78.64-1.46.27-2.89.6-4.33.93-1.06.25-1.88.31-2.68.12-1.23-.3-2.04-1.03-2.48-2.23-.4-1.09-.56-2.23-.67-3.2-.02-.2-.51-3.85-.82-5.43-.22-1.15.05-2.12 1.08-3.17.63-.65 1.44-1.16 2.48-1.57 1.39-.54 2.91-.94 4.92-1.3 2.27-.4 4.63-.69 7.22-.86.32-.02.81-.06 1.53-.06 1.03 0 1.85.12 2.85.84.79.57 1.1 1.09 1.31 1.61.32.8.56 1.67.69 2.6.07.51.39 4.7.43 5.8.03.84 0 1.82-.45 2.74z"></path></g></svg>
+            <li class="li4"><a href="https://music.youtube.com/">YouTube Music</a></li>
+            <li class="li5"><a href="https://www.youtubekids.com/?source=youtube_web">YouTube Kids</a></li>
+            <svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" class="creatoracademy"><g viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet"><g><path fill="#FF0000" d="M63,14.87c-0.72-2.7-2.85-4.83-5.56-5.56C52.54,8,32.88,8,32.88,8S13.23,8,8.32,9.31c-2.7,0.72-4.83,2.85-5.56,5.56C1.45,19.77,1.45,30,1.45,30s0,10.23,1.31,15.13c0.72,2.7,2.85,4.83,5.56,5.56C13.23,52,32.88,52,32.88,52s19.66,0,24.56-1.31c2.7-0.72,4.83-2.85,5.56-5.56C64.31,40.23,64.31,30,64.31,30S64.31,19.77,63,14.87z"></path><polygon fill="#FFFFFF" points="26.6,39.43 42.93,30 26.6,20.57"></polygon></g></svg>
+            <svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" class="youtubeforartists"><g viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet"><g><path fill="#FF0000" d="M63,14.87c-0.72-2.7-2.85-4.83-5.56-5.56C52.54,8,32.88,8,32.88,8S13.23,8,8.32,9.31c-2.7,0.72-4.83,2.85-5.56,5.56C1.45,19.77,1.45,30,1.45,30s0,10.23,1.31,15.13c0.72,2.7,2.85,4.83,5.56,5.56C13.23,52,32.88,52,32.88,52s19.66,0,24.56-1.31c2.7-0.72,4.83-2.85,5.56-5.56C64.31,40.23,64.31,30,64.31,30S64.31,19.77,63,14.87z"></path><polygon fill="#FFFFFF" points="26.6,39.43 42.93,30 26.6,20.57"></polygon></g></svg>
+            <li class="li6"><a href="https://creatoracademy.youtube.com/page/education?utm_source=YouTube&utm_medium=YT%20Main&utm_campaign=YT%20Appsn">Creator Academy</a></li>
+            <li class="li7"><a href="https://artists.youtube.com/">YouTube for Artists</a></li>
+          </ul>
+        </span>
+
+        <!-- nav item3 html -->
+
+        <span class="notifications">
+          <svg
+            viewBox="0 0 24 24"
+            class="navitem3"
+            style="display: block; width: 24px; height: 24px"
+          >
+            <g>
+              <path
+                d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
+              ></path>
+            </g>
+          </svg>
+          <button class="navlink3" title="Notifications">
+          </button>
+          <ul>
+            <p class="notificationsp1">Notifications</p>
+            <hr />
+            <button class="click1" onclick="alert('Working On It')"></button>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="notificationssetting"><g><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.1-1.65c.2-.15.25-.42.13-.64l-2-3.46c-.12-.22-.4-.3-.6-.22l-2.5 1c-.52-.4-1.08-.73-1.7-.98l-.37-2.65c-.06-.24-.27-.42-.5-.42h-4c-.27 0-.48.18-.5.42l-.4 2.65c-.6.25-1.17.6-1.7.98l-2.48-1c-.23-.1-.5 0-.6.22l-2 3.46c-.14.22-.08.5.1.64l2.12 1.65c-.04.32-.07.65-.07.98s.02.66.06.98l-2.1 1.65c-.2.15-.25.42-.13.64l2 3.46c.12.22.4.3.6.22l2.5-1c.52.4 1.08.73 1.7.98l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.6-.25 1.17-.6 1.7-.98l2.48 1c.23.1.5 0 .6-.22l2-3.46c.13-.22.08-.5-.1-.64l-2.12-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"></path></g></svg>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="notificationsbell"><g><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path></g></svg>
+            <p class="notificationsp2">Your notifications live here</p>
+            <p class="notificationsp3">Subscribe to your favorite channels to get <br /> <b class="notificationsextratext1">notified about their latest videos.</b></p>
+          </ul>
+        </span>
+
+        <!-- profile photo html -->
+
+        <a
+          href="https://www.youtube.com/channel/UCculFrsHWiGtb69I3p-HSKg?view_as=subscriber"
+          ><img
+            class="navprofilephoto"
+            src="https://lh3.googleusercontent.com/a-/AOh14Gg7JxhTQgiOZl8iBFhrYzrnFcTfMxiS1D3hGrO0=s88-c-k-c0x00ffffff-no-rj-mo"
+            alt="Profile image Photo"
+        /></a>
+      </span>
+    </div>
+
+    <!-- menu html -->
+
+    <div id="menu">
+      <!-- menu items html -->
+
+      <a href="" class="menuicon"
+        ><span onclick="Width()" class="menuiconspan"
+          ><svg viewBox="0 0 24 24" style="display: block; width: 24px; height: 24px;"><g><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></g></svg></span
+      ></a>
+
+      <!-- menu item1 html -->
+      
+      <a class="menulink1" href="https://www.youtube.com">
+        <span class="hover1">
+          <svg style="display: block; width: 24px; height: 24px;">
+            <g>
+              <path
+                d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8"
+              >
+            </g>
+            />
+          </svg>
+          </span>
+          <span class="menuitemtext1">Home</span>
+        </a>
+
+        <!-- menu item2 html -->
+
+        <a class="menulink2" href="https://www.youtube.com/feed/trending">
+          <span class="hover2">
+            <svg style="display: block; width: 24px; height: 24px;"><g><path d="M17.53 11.2c-.23-.3-.5-.56-.76-.82-.65-.6-1.4-1.03-2.03-1.66-1.46-1.46-1.78-3.87-.85-5.72-.9.23-1.75.75-2.45 1.32C8.9 6.4 7.9 10.07 9.1 13.22c.04.1.08.2.08.33 0 .22-.15.42-.35.5-.22.1-.46.04-.64-.12-.06-.05-.1-.1-.15-.17-1.1-1.43-1.28-3.48-.53-5.12C5.87 10 5 12.3 5.12 14.47c.04.5.1 1 .27 1.5.14.6.4 1.2.72 1.73 1.04 1.73 2.87 2.97 4.84 3.22 2.1.27 4.35-.12 5.96-1.6 1.8-1.66 2.45-4.3 1.5-6.6l-.13-.26c-.2-.45-.47-.87-.78-1.25zm-3.1 6.3c-.28.24-.73.5-1.08.6-1.1.38-2.2-.16-2.88-.82 1.2-.28 1.9-1.16 2.1-2.05.17-.8-.14-1.46-.27-2.23-.12-.74-.1-1.37.2-2.06.15.38.35.76.58 1.06.76 1 1.95 1.44 2.2 2.8.04.14.06.28.06.43.03.82-.32 1.72-.92 2.26z"></path></g></svg>
+            </span>
+            <span class="menuitemtext2">Trending</span>
+          </a>
+
+          <!-- menu item3 html -->
+
+          <a class="menulink3" href="https://www.youtube.com/feed/subscriptions">
+            <span class="hover3">
+              <svg style="display: block; width: 24px; height: 24px;"><g><path d="M18.7 8.7H5.3V7h13.4v1.7zm-1.7-5H7v1.6h10V3.7zm3.3 8.3v6.7c0 1-.7 1.6-1.6 1.6H5.3c-1 0-1.6-.7-1.6-1.6V12c0-1 .7-1.7 1.6-1.7h13.4c1 0 1.6.8 1.6 1.7zm-5 3.3l-5-2.7V18l5-2.7z"></path></g></svg>
+              </span>
+              <span class="menuitemtext3">Supscriptions</span>
+            </a>
+
+            <!-- menu item4 html -->
+
+            <a class="menulink4" href="https://www.youtube.com/feed/library">
+              <span class="hover4">
+                <svg style="display: block; width: 24px; height: 24px;"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"></path></g></svg>
+                </span>
+                <span class="menuitemtext4">Library</span>
+              </a>
+    </div>
+
+    <!-- video1 html -->
+
+    <a class="videolink1" href="https://www.youtube.com/watch?v=6Dh-RL__uN4">
+
+    <div id="youtubevideo1-container">
+
+      <div id="videothumbnail1">
+
+          <img
+            src="https://i.ytimg.com/vi/6Dh-RL__uN4/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDTcSQKR8ZHIwoKwIEExUc3KmuPKA"
+            alt="Pewdiepie YouTube Video
+        Thumbnail"
+          />
+
+          <!-- video1 icons html -->
+
+          <svg style="display: block; width: 24px; height: 24px;" class="watchlater1"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+
+          <svg class="addto1" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+
+          <span class="videotime1">2:15</span>
+
+          <svg style="display: block; width: 24px; height: 24px;" class="threedots1"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+
+          <!-- video1 text section html -->
+
+        <a href="https://www.youtube.com/user/PewDiePie">
+
+          <img
+            class="youtuberlogo1"
+            src="https://yt3.ggpht.com/a-/AOh14GiiPNpB2rGk8yIQ6Np13WiqltSjgnfH9-UBQQ=s68-c-k-c0x00ffffff-no-rj-mo"
+            alt="Pewdiepie Channel Logo"/>
+
+        <svg
+
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          class="verifiedicon1"
+          style="
+            display: block;
+            width: 100%;
+            height: 100%;
+            fill: rgba(225, 225, 225, 0.7);
+          "
+        >
+          <g>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10 S17.52,2,12,2z M9.92,17.93l-4.95-4.95l2.05-2.05l2.9,2.9l7.35-7.35l2.05,2.05L9.92,17.93z"
+              class="style-scope yt-icon"
+            ></path>
+          </g>
+        </svg>
+
+        <span class="videotextsection1">
+          <h6>Bitch Lasagna</h6>
+          <p>PewDiePie</p>
+        </span>
+
+      </div>
+    </div>
+  </a>
+
+    <!-- video2 html -->
+
+    <a class="videolink2" href="https://www.youtube.com/watch?v=BJPc49z57bU">
+
+    <div id="youtubevideo2-container">
+
+      <div id="videothumbnail2">
+
+          <img
+            src="https://i.ytimg.com/vi/BJPc49z57bU/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAz6DkxukQu30RG8JbDny3hHOimxg"
+            alt="Jacksepticeye YouTube Video
+        Thumbnail"
+          />
+
+          <!-- video2 icons html -->
+
+          <svg style="display: block; width: 24px; height: 24px;" class="watchlater2"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+          
+          <svg class="addto2" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+          
+          <svg style="display: block; width: 24px; height: 24px;" class="threedots2"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+          
+          <span class="videotime2">2:48</span></a>
+      </a>
+
+      <!-- video2 text section html -->
+
+        <a href="https://www.youtube.com/c/jacksepticeye">
+          
+          <img
+            class="youtuberlogo2"
+            src="https://yt3.ggpht.com/a-/AOh14Gh_wJ4eEwZ45cW2e4bz9D9kqUcxAa-gyJiVTQ=s68-c-k-c0x00ffffff-no-rj-mo"
+            alt="Jacksepticeye Channel Logo"
+        />
+
+        <svg
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          class="verifiedicon2"
+          style="
+            display: block;
+            width: 100%;
+            height: 100%;
+            fill: rgba(225, 225, 225, 0.7);
+          "
+        >
+          <g class="style-scope yt-icon">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10 S17.52,2,12,2z M9.92,17.93l-4.95-4.95l2.05-2.05l2.9,2.9l7.35-7.35l2.05,2.05L9.92,17.93z"
+              class="style-scope yt-icon"
+            ></path>
+          </g>
+        </svg>
+
+        <span class="videotextsection2">
+          <h6>
+            ALL THE WAY - <br />
+            Jacksepticeye Songify Rem...
+          </h6>
+          <p>Jacksepticeye</p>
+        </span>
+
+      </div>
+    </div>
+  </a>
+
+    <!-- video3 html -->
+
+    <a class="videolink3" href="https://www.youtube.com/watch?v=Zz8MCVJb0_k">
+
+    <div id="youtubevideo3-container">
+
+      <div id="videothumbnail3">
+
+          <img
+            src="https://i.ytimg.com/vi/Zz8MCVJb0_k/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBgiDS4kgl97R6vttWZ8VnPlFbYtQ"
+            alt="Markiplier YouTube Video
+        Thumbnail"
+          />
+
+          <!-- video3 icons html -->
+
+          <svg style="display: block; width: 24px; height: 24px;" class="watchlater3"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+          
+          <svg class="addto3" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+          
+          <svg style="display: block; width: 24px; height: 24px;" class="threedots3"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+          
+          <span class="videotime3">1:52</span></a>
+
+          <!-- video3 text section html -->
+
+        <a
+          href="https://www.youtube.com/c/markiplier/featured"
+        >
+          <img
+            class="youtuberlogo3"
+            src="https://yt3.ggpht.com/a/AATXAJyc3BbN6dW5gXh-iZR7_XlsE-gIxiGKE8jJr3_L6w=s88-c-k-c0x00ffffff-no-rj"
+            alt="Markiplier Channel Logo"
+        />
+
+        <svg
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          class="verifiedicon3"
+          style="
+            display: block;
+            width: 100%;
+            height: 100%;
+            fill: rgba(225, 225, 225, 0.7);
+          "
+        >
+          <g class="style-scope yt-icon">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10 S17.52,2,12,2z M9.92,17.93l-4.95-4.95l2.05-2.05l2.9,2.9l7.35-7.35l2.05,2.05L9.92,17.93z"
+              class="style-scope yt-icon"
+            ></path>
+          </g>
+        </svg>
+
+        <span class="videotextsection3">
+          <h6>
+            Five Nights at Freddy's ANIMATED
+          </h6>
+          <p>Markiplier</p>
+        </span>
+
+      </div>
+    </div>
+  </a>
+
+  <!-- video4 html -->
+
+  <a class="videolink4" href="https://www.youtube.com/watch?v=3TflpIllQHY">
+
+    <div id="youtubevideo4-container">
+
+      <div id="videothumbnail4">
+
+          <img
+            src="https://i.ytimg.com/vi/3TflpIllQHY/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDHa_SwNA6qZ_vVsEk-oKNbQbcIMw"
+            alt="MrBeast YouTube Video
+        Thumbnail"
+          />
+
+          <!-- video4 icons html -->
+
+          <svg style="display: block; width: 24px; height: 24px;" class="watchlater4"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+          
+          <svg class="addto4" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+          
+          <svg style="display: block; width: 24px; height: 24px;" class="threedots4"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+          
+          <span class="videotime4">14:51</span></a>
+
+          <!-- video4 text section html -->
+
+        <a
+          href="https://www.youtube.com/c/MrBeast6000/featured"
+        >
+          <img
+          class="youtuberlogo4"
+          src="https://yt3.ggpht.com/a/AATXAJynkPnPVO1teU1292tS2f52lj5Tb0ZwM_ML4ounGg=s88-c-k-c0x00ffffff-no-rj"
+            alt="MrBeast Channel Logo"
+        />
+
+        <svg
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          class="verifiedicon4"
+          style="
+            display: block;
+            width: 100%;
+            height: 100%;
+            fill: rgba(225, 225, 225, 0.7);
+          "
+        >
+          <g class="style-scope yt-icon">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10 S17.52,2,12,2z M9.92,17.93l-4.95-4.95l2.05-2.05l2.9,2.9l7.35-7.35l2.05,2.05L9.92,17.93z"
+            ></path>
+          </g>
+        </svg>
+
+        <span class="videotextsection4">
+          <h6>
+            I Put 100 Million Orbeez In <br /> <b class="extratext4">My Friend's Backyard</b>
+          </h6>
+          <p>MrBeast</p>
+        </span>
+
+      </div>
+    </div>
+  </a>
+
+   <!-- video5 html -->
+
+   <a class="videolink5" href="https://www.youtube.com/watch?v=e1lFNMo5qcQ">
+
+    <div id="youtubevideo5-container">
+
+      <div id="videothumbnail5">
+
+          <img
+            src="https://i.ytimg.com/vi/e1lFNMo5qcQ/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDtTwGrRonMeGQtSwbc-CY8ZWhkyQ"
+            alt="Sidemen YouTube Video
+        Thumbnail"
+          />
+
+  <!-- video5 icons html -->
+
+  <svg style="display: block; width: 24px; height: 24px;" class="watchlater5"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+          
+  <svg class="addto5" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+  
+  <svg style="display: block; width: 24px; height: 24px;" class="threedots5"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+  
+  <span class="videotime5">3:13</span></a>
+
+  <!-- video5 text section html -->
+
+<a
+  href="https://www.youtube.com/user/KSIOlajidebt"
+>
+  <img
+    class="youtuberlogo5"
+    src="https://yt3.ggpht.com/a/AATXAJwUOWjk9QJBLsigCXCiGZ_TmWhjc9eI6KgxlkmeLQ=s88-c-k-c0x00ffffff-no-rj"
+    alt="KSI Channel Logo"
+/>
+
+<svg viewBox="0 0 24 24" class="artisticon5" style="display: block; width: 24px; height: 24px; fill: #a5a5a5;"><g style="fill: #a5a5a5;" viewBox="0 0 24 24"><path style="fill: #181818;" d="M0 0h24v24H0z"></path><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path></g></svg>
+
+<span class="videotextsection5">
+  <h6>
+    KSI – Really Love (feat. Craig <br /> David & Digital Farm Animal...
+  </h6>
+  <p>KSI</p>
+</span>
+
+</div>
+</div>
+</a>
+
+  <!-- video6 html -->
+
+  <a class="videolink6" href="https://www.youtube.com/watch?v=aAOC71qqXxM">
+
+    <div id="youtubevideo6-container">
+
+      <div id="videothumbnail6">
+
+          <img
+            src="https://i.ytimg.com/vi/aAOC71qqXxM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAEvZWkh4PjlClYFXTSTeVh-owsrg"
+            alt="Sidemen YouTube Video
+        Thumbnail"
+          />
+
+          <!-- video6 icons html -->
+
+          <svg style="display: block; width: 24px; height: 24px;" class="watchlater6"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+          
+          <svg class="addto6" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+          
+          <svg style="display: block; width: 24px; height: 24px;" class="threedots6"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+          
+          <span class="videotime6">51:47</span></a>
+
+          <!-- video6 text section html -->
+
+        <a
+          href="https://www.youtube.com/c/Sidemen/featured"
+        >
+          <img
+            class="youtuberlogo6"
+            src="https://yt3.ggpht.com/a/AATXAJwu6tYkDehOZ2W5zqfTPR8TFnSZX2pp6C_r0ihUVg=s88-c-k-c0x00ffffff-no-rj"
+            alt="Sidemen Channel Logo"
+        />
+
+        <svg
+
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          class="verifiedicon6"
+          style="
+            display: block;
+            width: 100%;
+            height: 100%;
+            fill: rgba(225, 225, 225, 0.7);
+          "
+        >
+          <g>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10 S17.52,2,12,2z M9.92,17.93l-4.95-4.95l2.05-2.05l2.9,2.9l7.35-7.35l2.05,2.05L9.92,17.93z"
+              class="style-scope yt-icon"
+            ></path>
+          </g>
+        </svg>
+
+        <span class="videotextsection6">
+          <h6>
+            SIDEMEN TINDER IN REAL LIFE 2
+          </h6>
+          <p>Sidemen</p>
+        </span>
+
+      </div>
+    </div>
+  </a>
+
+    <!-- video7 html -->
+
+    <a class="videolink7" href="https://www.youtube.com/watch?v=6BCUIT70fWs">
+
+      <div id="youtubevideo7-container">
+  
+        <div id="videothumbnail7">
+  
+            <img
+              src="https://i.ytimg.com/vi/6BCUIT70fWs/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAe_kfB9db_6gYODAmBdbvCoUQ29Q"
+              alt="JJ Olatunji YouTube Video
+          Thumbnail"
+            />
+  
+            <!-- video7 icons html -->
+  
+            <svg style="display: block; width: 24px; height: 24px;" class="watchlater7"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+            
+            <svg class="addto7" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+            
+            <svg style="display: block; width: 24px; height: 24px;" class="threedots7"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+            
+            <span class="videotime7">10:01</span></a>
+  
+            <!-- video7 text section html -->
+  
+          <a
+            href="https://www.youtube.com/user/KSIOlajidebtHD/featured"
+          >
+            <img
+              class="youtuberlogo7"
+              src="https://yt3.ggpht.com/a/AATXAJy_kZNuDlAlUxyHn-8n55Ao96ijhRG4y5dLmb_M3Q=s88-c-k-c0x00ffffff-no-rj"
+              alt="JJ Olatunji Channel Logo"
+          />
+  
+          <svg
+  
+            viewBox="0 0 24 24"
+            preserveAspectRatio="xMidYMid meet"
+            focusable="false"
+            class="verifiedicon7"
+            style="
+              display: block;
+              width: 24px;
+              height: 24px;
+              fill: rgba(225, 225, 225, 0.7);
+            "
+          >
+            <g>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10 S17.52,2,12,2z M9.92,17.93l-4.95-4.95l2.05-2.05l2.9,2.9l7.35-7.35l2.05,2.05L9.92,17.93z"
+                class="style-scope yt-icon"
+              ></path>
+            </g>
+          </svg>
+  
+          <span class="videotextsection7">
+            <h6>
+              The Only Youtuber With 2 Diamond <br /> <b class="extratext7">Play Buttons</b>
+            </h6>
+            <p>JJ Olatunji</p>
+          </span>
+  
+        </div>
+      </div>
+    </a>
+
+        <!-- video8 html -->
+
+        <a class="videolink8" href="https://www.youtube.com/watch?v=viimfQi_pUw">
+
+          <div id="youtubevideo8-container">
+      
+            <div id="videothumbnail8">
+      
+                <img
+                  src="https://i.ytimg.com/vi/viimfQi_pUw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLABqHfjh1qgfd9pXWrgbOSil7JI-g"
+                  alt="Bellie Eilish YouTube Video
+              Thumbnail"
+                />
+      
+                <!-- video8 icons html -->
+      
+                <svg style="display: block; width: 24px; height: 24px;" class="watchlater8"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+                
+                <svg class="addto8" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+                
+                <svg style="display: block; width: 24px; height: 24px;" class="threedots8"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+                
+                <span class="videotime8">3:21</span></a>
+      
+                <!-- video8 text section html -->
+      
+              <a
+                href="https://www.youtube.com/channel/UCiGm_E4ZwYSHV3bcW1pnSeQ"
+              >
+                <img
+                  class="youtuberlogo8"
+                  src="https://yt3.ggpht.com/a/AATXAJzVpqyUtd21UA91pv9nORL-VHEZ4-baxI2WccJQqw=s88-c-k-c0x00ffffff-no-rj"
+                  alt="Bellie Eilish Channel Logo"
+              />
+
+              <svg viewBox="0 0 24 24" class="artisticon8" style="display: block; width: 24px; height: 24px; fill: #a5a5a5;"><g style="fill: #a5a5a5;" viewBox="0 0 24 24"><path style="fill: #181818;" d="M0 0h24v24H0z"></path><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path></g></svg>
+      
+              <span class="videotextsection8">
+                <h6>
+                  Billie Eilish - Ocean Eyes (Official <br /> <b class="extratext8">Music Video)</b>
+                </h6>
+                <p>Bellie Eilish</p>
+              </span>
+      
+            </div>
+          </div>
+        </a>
+
+           <!-- video9 html -->
+
+   <a class="videolink9" href="https://www.youtube.com/watch?v=XbGs_qK2PQA">
+
+    <div id="youtubevideo9-container">
+
+      <div id="videothumbnail9">
+
+          <img
+            src="https://i.ytimg.com/vi/XbGs_qK2PQA/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDa5GUNqh5fP6SZQScJXO4MedYnvA"
+            alt="EminemMusic YouTube Video
+        Thumbnail"
+          />
+
+  <!-- video9 icons html -->
+
+  <svg style="display: block; width: 24px; height: 24px;" class="watchlater9"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+          
+  <svg class="addto9" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+  
+  <svg style="display: block; width: 24px; height: 24px;" class="threedots9"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+  
+  <span class="videotime9">6:10</span></a>
+
+  <!-- video9 text section html -->
+
+<a
+  href="https://www.youtube.com/channel/UCfM3zsQsOnfWNUppiycmBuw"
+>
+  <img
+    class="youtuberlogo9"
+    src="https://yt3.ggpht.com/a/AATXAJwS-EfJzU6v3dqTzjkxpTZOnwUiPKtbB89Y8JpOQw=s48-c-k-c0xffffffff-no-nd-rj-mo"
+    alt="EminemMusic Channel Logo"
+/>
+
+<svg viewBox="0 0 24 24" class="artisticon9" style="display: block; width: 24px; height: 24px; fill: #a5a5a5;"><g style="fill: #a5a5a5;" viewBox="0 0 24 24"><path style="fill: #181818;" d="M0 0h24v24H0z"></path><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path></g></svg>
+
+<span class="videotextsection9">
+  <h6>
+    Eminem - Rap God (Explicit)<br /><b class="extratext9">[Official Video]</b>
+  </h6>
+  <p>EminemMusic</p>
+</span>
+
+</div>
+</div>
+</a>
+
+<!-- video10 html -->
+
+<a class="videolink10" href="https://www.youtube.com/watch?v=6Sl-1X58ObY">
+
+  <div id="youtubevideo10-container">
+
+    <div id="videothumbnail10">
+
+        <img
+          src="https://i.ytimg.com/vi/6Sl-1X58ObY/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCG-V-3257JHgLAoFDDpE4VXuf27Q"
+          alt="Markipler YouTube Video
+      Thumbnail"
+        />
+
+<!-- video10 icons html -->
+
+<svg style="display: block; width: 24px; height: 24px;" class="watchlater10"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+        
+<svg class="addto10" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+
+<svg style="display: block; width: 24px; height: 24px;" class="threedots10"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+
+<span class="videotime10">13:37</span></a>
+
+<!-- video10 text section html -->
+
+<a
+href="https://www.youtube.com/c/markiplier/featured"
+>
+<img
+  class="youtuberlogo10"
+  src="https://yt3.ggpht.com/a/AATXAJyc3BbN6dW5gXh-iZR7_XlsE-gIxiGKE8jJr3_L6w=s88-c-k-c0x00ffffff-no-rj"
+  alt="Markiplier Channel Logo"
+/>
+
+<svg
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          class="verifiedicon10"
+          style="
+            display: block;
+            width: 100%;
+            height: 100%;
+            fill: rgba(225, 225, 225, 0.7);
+          "
+        >
+          <g class="style-scope yt-icon">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10 S17.52,2,12,2z M9.92,17.93l-4.95-4.95l2.05-2.05l2.9,2.9l7.35-7.35l2.05,2.05L9.92,17.93z"
+              class="style-scope yt-icon"
+            ></path>
+          </g>
+        </svg>
+
+<span class="videotextsection10">
+<h6>
+  Draw My Life - Markiplier
+</h6>
+<p>Markiplier</p>
+</span>
+
+</div>
+</div>
+</a>
+
+<!-- video11 html -->
+
+<a class="videolink11" href="https://www.youtube.com/watch?v=Di0nAk2_Tpw">
+
+  <div id="youtubevideo11-container">
+
+    <div id="videothumbnail11">
+
+        <img
+          src="https://i.ytimg.com/vi/Di0nAk2_Tpw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBRg77mHs5QODCA9I0XB7LiegQW5Q"
+          alt="KSI YouTube Video
+      Thumbnail"
+        />
+
+<!-- video11 icons html -->
+
+<svg style="display: block; width: 24px; height: 24px;" class="watchlater11"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+        
+<svg class="addto11" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+
+<svg style="display: block; width: 24px; height: 24px;" class="threedots11"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+
+<span class="videotime11">4:30</span></a>
+
+<!-- video11 text section html -->
+
+<a
+href="https://www.youtube.com/channel/UCVtFOytbRpEvzLjvqGG5gxQ"
+>
+<img
+  class="youtuberlogo11"
+  src="https://yt3.ggpht.com/a/AATXAJwUOWjk9QJBLsigCXCiGZ_TmWhjc9eI6KgxlkmeLQ=s48-c-k-c0xffffffff-no-nd-rj-mo"
+  alt="KSI Channel Logo"
+/>
+
+<svg viewBox="0 0 24 24" class="artisticon11" style="display: block; width: 24px; height: 24px; fill: #a5a5a5;"><g style="fill: #a5a5a5;" viewBox="0 0 24 24"><path style="fill: #181818;" d="M0 0h24v24H0z"></path><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path></g></svg>
+
+<span class="videotextsection11">
+<h6>
+  Nathan Dawe x KSI – Lighter <br /> <b class="extratext11">[Official Video]</b>
+</h6>
+<p>KSI</p>
+</span>
+
+</div>
+</div>
+</a>
+
+<!-- video12 html -->
+
+<a class="videolink12" href="https://www.youtube.com/watch?v=7PIMiDcwNvc">
+
+  <div id="youtubevideo12-container">
+
+    <div id="videothumbnail12">
+
+        <img
+          src="https://i.ytimg.com/vi/7PIMiDcwNvc/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDzfE-dr3XxwyqXppm81WUuqnXPKA"
+          alt="PewDiePie YouTube Video
+      Thumbnail"
+        />
+
+<!-- video12 icons html -->
+
+<svg style="display: block; width: 24px; height: 24px;" class="watchlater12"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+        
+<svg class="addto12" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+
+<svg style="display: block; width: 24px; height: 24px;" class="threedots12"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+
+<span class="videotime12">6:21</span></a>
+
+<!-- video12 text section html -->
+
+<a
+href="https://www.youtube.com/user/PewDiePie"
+>
+<img
+  class="youtuberlogo12"
+  src="https://yt3.ggpht.com/a/AATXAJwTuzNgKRSLVIOcVTVGGr_xFKgo8LFSQF163hCKSQ=s48-c-k-c0xffffffff-no-rj-mo"
+  alt="PewDiePie Channel Logo"
+/>
+
+<svg
+
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          class="verifiedicon12"
+          style="
+            display: block;
+            width: 100%;
+            height: 100%;
+            fill: rgba(225, 225, 225, 0.7);
+          "
+        >
+          <g>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10 S17.52,2,12,2z M9.92,17.93l-4.95-4.95l2.05-2.05l2.9,2.9l7.35-7.35l2.05,2.05L9.92,17.93z"
+              class="style-scope yt-icon"
+            ></path>
+          </g>
+        </svg>
+
+<span class="videotextsection12">
+<h6>
+  Marzia & Felix - Wedding <br /> <b class="extratext12">19.08.2019</b>
+</h6>
+<p>PewDiePie</p>
+</span>
+
+</div>
+</div>
+</a>
+
+<!-- video13 html -->
+
+<a class="videolink13" href="https://www.youtube.com/watch?v=K0X5A6aURms">
+
+  <div id="youtubevideo13-container">
+
+    <div id="videothumbnail13">
+
+        <img
+          src="https://i.ytimg.com/vi/K0X5A6aURms/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB0OHy4FcY7O335wcjoPv0BTaRuXg"
+          alt="Dani YouTube Video
+      Thumbnail"
+        />
+
+<!-- video13 icons html -->
+
+<svg style="display: block; width: 24px; height: 24px;" class="watchlater13"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+        
+<svg class="addto13" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+
+<svg style="display: block; width: 24px; height: 24px;" class="threedots13"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+
+<span class="videotime13">15:55</span></a>
+
+<!-- video13 text section html -->
+
+<a
+href="https://www.youtube.com/channel/UCIabPXjvT5BVTxRDPCBBOOQ"
+>
+<img
+  class="youtuberlogo13"
+  src="https://yt3.ggpht.com/a/AATXAJzTqQC2xCYiJ3K8Fk-QR5Ev5t-cOzWWtVaLeJTZcw=s48-c-k-c0xffffffff-no-rj-mo"
+  alt="Dani Channel Logo"
+/>
+
+<svg
+
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          class="verifiedicon13"
+          style="
+            display: block;
+            width: 100%;
+            height: 100%;
+            fill: rgba(225, 225, 225, 0.7);
+          "
+        >
+          <g>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10 S17.52,2,12,2z M9.92,17.93l-4.95-4.95l2.05-2.05l2.9,2.9l7.35-7.35l2.05,2.05L9.92,17.93z"
+              class="style-scope yt-icon"
+            ></path>
+          </g>
+        </svg>
+
+<span class="videotextsection13">
+<h6>
+  I Made Among Us, but it's 3D
+</h6>
+<p>Dani</p>
+</span>
+
+</div>
+</div>
+</a>
+
+<!-- video14 html -->
+
+<a class="videolink14" href="https://www.youtube.com/watch?v=BboMpayJomw">
+
+  <div id="youtubevideo14-container">
+
+    <div id="videothumbnail14">
+
+        <img
+          src="https://i.ytimg.com/vi/BboMpayJomw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB9aHJNe_Hs_WxjAmL5t43PD8mHmg"
+          alt="Bellie Eilish YouTube Video
+      Thumbnail"
+        />
+
+<!-- video14 icons html -->
+
+<svg style="display: block; width: 24px; height: 24px;" class="watchlater14"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+        
+<svg class="addto14" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+
+<svg style="display: block; width: 24px; height: 24px;" class="threedots14"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+
+<span class="videotime14">3:59</span></a>
+
+<!-- video14 text section html -->
+
+<a
+href="https://www.youtube.com/channel/UCiGm_E4ZwYSHV3bcW1pnSeQ"
+>
+<img
+  class="youtuberlogo14"
+  src="https://yt3.ggpht.com/a/AATXAJzVpqyUtd21UA91pv9nORL-VHEZ4-baxI2WccJQqw=s88-c-k-c0x00ffffff-no-rj"
+  alt="Bellie Eilish Channel Logo"
+/>
+
+<svg viewBox="0 0 24 24" class="artisticon14" style="display: block; width: 24px; height: 24px; fill: #a5a5a5;"><g style="fill: #a5a5a5;" viewBox="0 0 24 24"><path style="fill: #181818;" d="M0 0h24v24H0z"></path><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path></g></svg>
+
+<span class="videotextsection14">
+<h6>
+  Billie Eilish - No Time To Die
+</h6>
+<p>Bellie Eilish</p>
+</span>
+
+</div>
+</div>
+</a>
+
+<!-- video15 html -->
+
+<a class="videolink15" href="https://www.youtube.com/watch?v=DYlesHOaPkY">
+
+  <div id="youtubevideo15-container">
+
+    <div id="videothumbnail15">
+
+        <img
+          src="https://i.ytimg.com/vi/DYlesHOaPkY/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDZ_X28e1oAXIvBRBY871P9WQUZAA"
+          alt="PewDiePie YouTube Video
+      Thumbnail"
+        />
+
+<!-- video15 icons html -->
+
+<svg style="display: block; width: 24px; height: 24px;" class="watchlater15"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+        
+<svg class="addto15" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+
+<svg style="display: block; width: 24px; height: 24px;" class="threedots15"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+
+<span class="videotime15">9:42</span></a>
+
+<!-- video15 text section html -->
+
+<a
+href="https://www.youtube.com/user/PewDiePie"
+>
+<img
+  class="youtuberlogo15"
+  src="https://yt3.ggpht.com/a/AATXAJwTuzNgKRSLVIOcVTVGGr_xFKgo8LFSQF163hCKSQ=s48-c-k-c0xffffffff-no-rj-mo"
+  alt="PewDiePie Channel Logo"
+/>
+
+<svg
+
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          class="verifiedicon15"
+          style="
+            display: block;
+            width: 100%;
+            height: 100%;
+            fill: rgba(225, 225, 225, 0.7);
+          "
+        >
+          <g>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10 S17.52,2,12,2z M9.92,17.93l-4.95-4.95l2.05-2.05l2.9,2.9l7.35-7.35l2.05,2.05L9.92,17.93z"
+              class="style-scope yt-icon"
+            ></path>
+          </g>
+        </svg>
+
+<span class="videotextsection15">
+<h6>
+  Unboxing 100 MIL YouTube <br /> <b class="extratext15">AWARD!!</b>
+</h6>
+<p>PewDiePie</p>
+</span>
+
+</div>
+</div>
+</a>
+
+<!-- video16 html -->
+
+<a class="videolink16" href="https://www.youtube.com/watch?v=bqNzbkIHYF8">
+
+  <div id="youtubevideo16-container">
+
+    <div id="videothumbnail16">
+
+        <img
+          src="https://i.ytimg.com/vi/bqNzbkIHYF8/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD2T1oEI1wCSk_x32QV03AeO723mw"
+          alt="PewDiePie YouTube Video
+      Thumbnail"
+        />
+
+<!-- video16 icons html -->
+
+<svg style="display: block; width: 24px; height: 24px;" class="watchlater16"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+        
+<svg class="addto16" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+
+<svg style="display: block; width: 24px; height: 24px;" class="threedots16"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+
+<span class="videotime16">2:34</span></a>
+
+<!-- video16 text section html -->
+
+<a
+href="https://www.youtube.com/user/jacksepticeye?pbjreload=102"
+>
+<img
+  class="youtuberlogo16"
+  src="https://yt3.ggpht.com/a/AATXAJzaSJH0K8-ilu8oUwQ30UodS8B9K8MJlDfMiEXWTA=s48-c-k-c0xffffffff-no-rj-mo"
+  alt="Jacksepticeye Channel Logo"
+/>
+
+<svg
+
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          class="verifiedicon16"
+          style="
+            display: block;
+            width: 100%;
+            height: 100%;
+            fill: rgba(225, 225, 225, 0.7);
+          "
+        >
+          <g>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10 S17.52,2,12,2z M9.92,17.93l-4.95-4.95l2.05-2.05l2.9,2.9l7.35-7.35l2.05,2.05L9.92,17.93z"
+              class="style-scope yt-icon"
+            ></path>
+          </g>
+        </svg>
+
+<span class="videotextsection16">
+<h6>
+  Five Nights At Freddy's 2 Anim <br /> <b class="extratext16">ation | Jacksepticeye Animated</b>
+</h6>
+<p>Jacksepticeye</p>
+</span>
+
+</div>
+</div>
+</a>
+
+<!-- video17 html -->
+
+<a class="videolink17" href="https://www.youtube.com/watch?v=qjQjxpnwVZw">
+
+  <div id="youtubevideo17-container">
+
+    <div id="videothumbnail17">
+
+        <img
+          src="https://i.ytimg.com/vi/qjQjxpnwVZw/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCdiXIZAsU_ogEhjnFRX_iL_Xh6Jw"
+          alt="KSI YouTube Video
+      Thumbnail"
+        />
+
+<!-- video17 icons html -->
+
+<svg style="display: block; width: 24px; height: 24px;" class="watchlater17"><g><path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z"></path></g></svg>
+        
+<svg class="addto17" style="display: block; width: 24px; height: 24px;"><g><path d="M9,10 L18,10 L18,12 L9,12 L9,10 Z M6,6 L18,6 L18,8 L6,8 L6,6 Z M12,14 L18,14 L18,16 L12,16 L12,14 Z M6,12 L6,18 L10,15 L6,12 Z"></path></g></svg>
+
+<svg style="display: block; width: 24px; height: 24px;" class="threedots17"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+
+<span class="videotime17">3:19</span></a>
+
+<!-- video17 text section html -->
+
+<a
+href="https://www.youtube.com/c/ksi/featured"
+>
+<img
+  class="youtuberlogo17"
+  src="https://yt3.ggpht.com/ytc/AAUvwniB5VOGDN1lN_uSFg4uApLlEGDG762KQIa477pP8A=s88-c-k-c0x00ffffff-no-rj"
+  alt="KSI Channel Logo"
+/>
+
+<svg viewBox="0 0 24 24" class="artisticon17" style="display: block; width: 24px; height: 24px; fill: #a5a5a5;"><g style="fill: #a5a5a5;" viewBox="0 0 24 24"><path style="fill: #181818;" d="M0 0h24v24H0z"></path><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path></g></svg>
+
+<span class="videotextsection17">
+<h6>
+  Anne-Marie x KSI x Digital Farm <b class="extratext17">Animals - Don’t Play [Official...
+  </b>
+</h6>
+<p>KSI</p>
+</span>
+
+</div>
+</div>
+</a>
+  
+  <!-- footer section html -->
+
+      <h4 class="copyrights">
+        &copy; 2020 Copyrights are reversed to the author <b>Evan Alexander</b>
+      </h4>
+  </body>
+</html>
