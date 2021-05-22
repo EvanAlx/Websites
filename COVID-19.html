@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<style>
+        body {
+            background-color: #000000;
+        }
+
+        h1 {
+            font-size: 100px;
+            color: white;
+            text-align: center;
+            position: relative;
+            bottom: 20px;
+        }
+
+        #CVD {
+            text-transform: capitalize;
+            text-align: center;
+            color: #5D6D7E;
+        }
+
+        #SAS {
+            text-transform: capitalize;
+            position: absolute;
+            top: 400px;
+            left: 630px;
+            color: #5D6D7E;
+        }
+
+        #LOC {
+            text-transform: capitalize;
+            position: absolute;
+            top: 510px;
+            left: 550px;
+            color: #5D6D7E;
+        }
+
+        #TRN {
+            text-transform: capitalize;
+            position: absolute;
+            top: 600px;
+            left: 590px;
+            color: #5D6D7E;
+        }
+
+        #KYI {
+            text-transform: capitalize;
+            position: absolute;
+            top: 810px;
+            left: 480px;
+            color: #5D6D7E;
+        }
+
+        #HLH {
+            text-transform: capitalize;
+            position: absolute;
+            top: 900px;
+            left: 560px;
+            color: #5D6D7E;
+        }
+
+        #CV {
+            text-transform: capitalize;
+            position: absolute;
+            top: 1210px;
+            left: 590px;
+            color: #5D6D7E;
+        }
+
+        #PND {
+             text-transform: capitalize;
+            position: absolute;
+            top: 1350px;
+            left: 560px;
+            color: #5D6D7E;
+        }
+
+        footer {
+            text-align: center;
+            position: relative;
+            top: 600px;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: #A9A9A9;
+        }
+
+        li {
+            float: left;
+            display: inline;
+        }
+
+        a {
+            display: block;
+            padding: 12px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        li a {
+            display: block;
+            padding: 14px 16px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            background-color: #808080;
+        }
+
+        li a:hover {
+            background-color: #ddd;
+        }
+
+        button {
+            font-size: 17px;
+            padding: 0 3px;
+            float: left;
+            background-color: #296d98;
+            position: absolute;
+            right: 20px;
+            bottom: 15px;
+            color: white;
+            border: none;
+        }
+
+        nav {
+            position: relative;
+            bottom: 100px;
+            width: 100%;
+        }
+
+        .placeholder {
+            position: absolute;
+            right: 80px;
+            bottom: 15px;
+        }
+
+        hr {
+            position: relative;
+            top: 600px;
+        }
+
+        .cor {
+            position: relative;
+            height: 100px;
+            width: 100px;
+            bottom: 255px;
+        }
+
+        .infobox {
+            width: 350px;
+            border: 3px solid white;
+            padding: 10px;
+            position: relative;
+            left: 930px;
+            bottom: 320px;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        .COV {
+            color: white;
+            font-size: 17px;
+            position: relative;
+            bottom: 200px;
+            font-family: sans-serif;
+        }
+
+        .N1 {
+            color: white;
+            font-size: 16px;
+            position: relative;
+            bottom: 190px;
+        }
+
+        table {
+            border-collapse: collapse;
+            position: relative;
+            left: 1100px;
+            bottom: 300px;
+        }
+
+        th {
+            color: white;
+            font-family: sans-serif;
+        }
+
+        td {
+            color: white;
+            font-family: sans-serif;
+        }
+
+        #SRS {
+            color: white;
+            font-size: 17px;
+            position: relative;
+            bottom: 230px;
+            font-family: sans-serif;
+        }
+
+        .CFL {
+            color: white;
+            font-size: 17px;
+            position: relative;
+            bottom: 180px;
+            font-family: sans-serif;
+        }
+
+        .CVT {
+            color: white;
+            font-size: 17px;
+            position: relative;
+            bottom: 130px;
+            font-family: sans-serif;
+        }
+
+        .N2 {
+            color: white;
+            font-size: 16px;
+            position: relative;
+            bottom: 125px;
+        }
+
+        .N3 {
+            color: white;
+            font-size: 16px;
+            position: relative;
+            bottom: 120px;
+        }
+
+        .common_sym {
+            border-collapse: collapse;
+            position: relative;
+            left: 1050px;
+            bottom: 130px;
+        }
+
+        .MCS {
+            color: white;
+            font-size: 17px;
+            position: relative;
+            bottom: 70px;
+            font-family: sans-serif;
+        }
+
+        .N4 {
+            color: white;
+            font-size: 16px;
+            position: absolute;
+            bottom: -225px;
+            left: 1060px;
+        }
+
+        .PYS {
+            color: white;
+            font-size: 17px;
+            position: relative;
+            bottom: 160px;
+            font-family: sans-serif;
+        }
+
+        .PYW {
+            color: white;
+            font-size: 17px;
+            position: relative;
+            bottom: 100px;
+            font-family: sans-serif;
+        }
+
+        ol {
+            background-color: white;
+            position: relative;
+            bottom: 120px;
+        }
+
+        .RNC {
+            color: white;
+            font-size: 17px;
+            position: relative;
+            bottom: 50px;
+            font-family: sans-serif;
+        }
+
+        .HST {
+            color: white;
+            font-size: 17px;
+            position: relative;
+            bottom: 50px;
+            font-family: sans-serif;
+        }
+
+        .pandemics {
+            position: absolute;
+            left: 180px;
+            top: 1410px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+    </style>
+
+    <html>
+
+    <head>
+        <title>COVID-19</title>
+    </head>
+
+    <body>
+        <main>
+
+            <header>
+                <h1>Welcome</h1>
+                <h2 id="CVD">COVID-19</h2>
+                <h2 id="SAS">SARS</h2>
+                <h2 id="LOC">Corona First Location</h2>
+                <h2 id="TRN">Transimation</h2>
+                <h2 id="KYI">How do you know you're infected</h2>
+                <h2 id="HLH">Health and Hygine</h2>
+                <h2 id="CV">Coronavirus</h2>
+                <h2 id="PND">Some Of Pandemics</h2>
+            </header>
+
+            <nav>
+                <div class="Bar">
+                    <ul class="L">
+                    <li class="I"><a href="#" class="Home_Link">Home</a></li>
+                    <li class="I"><a href="#" class="Contact_Link">Contact</a></li>
+                    <li class="I"><a href="#CVD" class="CVD_Link">COVID-19</a></li>
+                    <li class="I"><a href="#SAS" class="SAS_Link">SARS</a></li>
+                    <li class="I"><a href="#LOC" class="LOC_Link">Corona 1<sup>st</sup> Loc.</a></li>
+                    <li class="I"><a href="#TRN" class="TRN_Link">Transimation</a></li>
+                    <li class="I"><a href="#KYI" class="KYI_Link">Know You're Inf.</a></li>
+                    <li class="I"><a href="#HLH" class="HLH_Link">Hel. & Hyg.</a></li>
+                    <li class="I"><a href="#CV" class="CV_Link">Coronavirus</a></li>
+                    <li class="I"><a href="#PND" class="PND_Link">Some of Pand.</a></li>
+                    </ul>
+                </div>
+
+                <button>Search</button>
+                <input class="placeholder" type="text" placeholder="Search Here">
+            </nav>
+
+            <img class="cor" src="COVID-19 icon 2FINAL.png" alt="COVID-19 logo image">
+
+            <div class="infobox"><strong>All information are taken from reliable source</strong></div>
+
+            <p class="COV">Corona virus disease 2019 (COVID-19) is an infection diseasecaused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).</p>
+
+            <p class="N1"><strong>Note: Infection is the invasion of an organism's body tissue by disease-causing agents, their multiplication and the reaction of hot tissues to the <br /> infection agents and the toxins they produce.</strong></p>
+
+            <table border="2px solid white">
+                <tr>
+                    <th>Other COVID-19 Names</th>
+                </tr>
+                <tr>
+                    <td>Coronavirus</td>
+                </tr>
+                <tr>
+                    <td>Corona</td>
+                </tr>
+                <tr>
+                    <td>Covid</td>
+                </tr>
+            </table>
+
+            <p id="SRS">(SARS) is thr strain of coronavirus that causes coronavirus disease 2019 (COVID-19), the respiratory illness responsible for the COVID-19 <br /> pandemic.</p>
+
+            <p class="CFL">It was first identified in December 2019 in <strong>Wuhan, Hubei, China</strong> and his resulted is an ongoing pandemic.</p>
+
+            <p class="CVT">Spreads primarily when people are in close conatct an one person inhales small droplets produced by an infected person (Symptomatic or <br/> Not) <strong>coughing, sneezing, talking.</strong></p>
+
+            <p class="N2"><strong>Note: WHO (World Health Organization) recommended 1 meters(3ft) of social distance. The U.S CDC (Centers for Disease Control and Prevention) rec- <br /> ommended 2 meters(6ft) of social distance.</strong></p>
+
+            <p class="N3"><strong>Note: COVID-19 ia a new disease, and many of the details of its spread are still under investigations.</strong></p>
+
+            <p class="MCS">There are many symptoms of COVID-19, but usually include fever and cough.</p>
+
+            <p class="N4"><strong>Some of the most common symptoms :</strong></p>
+
+            <table class="common_sym" border="2px solid white">
+                <tr>
+                    <th>Nom.</th>
+                    <th>Symptom</th>
+                    <th>Percentage</th>
+                </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Fever</td>
+                        <td>83-99%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Cough</td>
+                        <td>59-82%</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Loss of Appeite</td>
+                        <td>40-84%</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Fatigue</td>
+                        <td>44-70%</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Shortness of Breath</td>
+                        <td>31-40%</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Coughing up Spulum</td>
+                        <td>28-33%</td>
+                    </tr>
+            </table>
+
+            <p class="PYS">For protecting yourself and other people do these :</p>
+
+            <div class="list">
+                <ol><strong>Wear Face Mask</strong></ol>
+                <ol><strong>Keep Social Distance</strong></ol>
+                <ol><strong>Hand Washing and Hygine</strong></ol>
+            </div>
+
+            <p class="PYW"><strong>Keep Doing This Until COVID-19 Ends.</strong></p>
+
+            <p class="RNC">Coronaviruses are a group of related RNA viruses that cause disease in mammals, birds and humans.Mild illness in humans include some <br /> cases of the common cold.There are no vacciens or antiviral drugs to prevent or threat human coronavirus infections.</p>
+
+            <p class="HST"><strong>History:</strong> The name "coronavirus" is derired from Latin "corona" meaning "crown" or "wearth".Coronavirus constitute the subfamily <strong>(Orthocoronavirinae)</strong></p>
+
+            <table class="pandemics" border="2px" solid white">
+                <tr>
+                    <th>Event</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Disease</th>
+                    <th>Death</th>
+                </tr>
+                <tr>
+                    <td>Black Death</td>
+                    <td>1346-1353</td>
+                    <td>Europe, Asia and North Africa</td>
+                    <td>Bubonic plague</td>
+                    <td>75-200 milion</td>
+                </tr>
+                <tr>
+                    <td>Sweating Sickness</td>
+                    <td>1485-1551</td>
+                    <td>Britain(England)</td>
+                    <td>Unknown</td>
+                    <td>10,000+</td>
+                </tr>
+                <tr>
+                    <td>Mexico Smallpox</td>
+                    <td>1519-1520</td>
+                    <td>Mexico</td>
+                    <td>Smallpox</td>
+                    <td>5-8 million</td>
+                </tr>
+                <tr>
+                    <td>Chile Smallpox</td>
+                    <td>1561-1562</td>
+                    <td>Chile</td>
+                    <td>Smallpox</td>
+                    <td>Unknown</td>
+                </tr>
+                <tr>
+                    <td>Cocoliztli epidemic</td>
+                    <td>1576-1580</td>
+                    <td>Mexico</td>
+                    <td>Salmonella</td>
+                    <td>2-2.5 million</td>
+                </tr>
+                <tr>
+                    <td>London Plague</td>
+                    <td>1592-1593</td>
+                    <td>London,England</td>
+                    <td>Bubonic</td>
+                    <td>19,900</td>
+                </tr>
+                <tr>
+                    <td>Spain Plague</td>
+                    <td>1596-1602</td>
+                    <td>Spain</td>
+                    <td>Bubonic</td>
+                    <td>600,000-700,000</td>
+                </tr>
+                <tr>
+                    <td>South America Malaria</td>
+                    <td>1600-1650</td>
+                    <td>South America</td>
+                    <td>Malaria</td>
+                    <td>Unkown</td>
+                </tr>
+                <tr>
+                    <td>Egyptain Plague</td>
+                    <td>1609</td>
+                    <td>Egypt</td>
+                    <td>Bubonic</td>
+                    <td>1 million</td>
+                </tr>
+                <tr>
+                    <td>Italian Plague</td>
+                    <td>1629-1631</td>
+                    <td>Italy</td>
+                    <td>Bubonic</td>
+                    <td>1 million</td>
+                </tr>
+                <tr>
+                    <td>China Plague</td>
+                    <td>1641-1644</td>
+                    <td>China</td>
+                    <td>Bubonic</td>
+                    <td>Unknown</td>
+                </tr>
+                <tr>
+                    <td>Naples Plague</td>
+                    <td>1656</td>
+                    <td>Italy</td>
+                    <td>Bubonic</td>
+                    <td>1,250,000 million</td>
+                </tr>
+                <tr>
+                    <td>France Plague</td>
+                    <td>1668</td>
+                    <td>France</td>
+                    <td>Bubonic</td>
+                    <td>40,000</td>
+                </tr>
+                <tr>
+                    <td>Charlston Smallpox</td>
+                    <td>1760</td>
+                    <td>Charlston,United States</td>
+                    <td>Smallpox</td>
+                    <td>730,940</td>
+                </tr>
+                <tr>
+                    <td>Russia Typhus</td>
+                    <td>1812</td>
+                    <td>Russia</td>
+                    <td>Typhus</td>
+                    <td>300,000</td>
+                </tr>
+                <tr>
+                    <td>1889-1890 Flu</td>
+                    <td>1889-1890</td>
+                    <td>Worldwide</td>
+                    <td>Influenza</td>
+                    <td>1 million</td>
+                </tr>
+                <tr>
+                    <td>Spanish Flu</td>
+                    <td>1910-1920</td>
+                    <td>Worldwide</td>
+                    <td>Influenza Type H1N1</td>
+                    <td>50-100 million+</td>
+                </tr>
+                <tr>
+                    <td>Ebolavirus</td>
+                    <td>2013-2016</td>
+                    <td>Worldwide</td>
+                    <td>Ebola</td>
+                    <td>11,323+</td>
+                </tr>
+            </table>
+
+            <hr>
+
+        </main>
+        
+        <footer>&copy 2020</footer>;
+    </body>
+
+    </html>
